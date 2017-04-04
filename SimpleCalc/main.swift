@@ -8,10 +8,10 @@
 
 import Foundation
 
+print("Support negative and decimal numbers.")
 print("Enter an expression separated by returns")
 print("Or enter an expression with several numbers and one extended operand(count, avg, fact) at the end separated by space:")
-//let line1 = readLine(strippingNewline: true)!.components(separatedBy: " ")
-let line1 = CommandLine.arguments
+let line1 = readLine(strippingNewline: true)!.components(separatedBy: " ")
 if line1.count > 1 {
     switch line1[line1.count-1] {
         case "count":
