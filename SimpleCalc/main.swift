@@ -40,8 +40,8 @@ if line1.count > 1 {
     }
 } else {
     let num1 = Double(line1[0])
-    let op = readLine(strippingNewline: true)!
-    let num2 = Double(readLine(strippingNewline: true)!)
+    let op = readLine(strippingNewline: true)!.trimmingCharacters(in: .whitespaces)
+    let num2 = Double(readLine(strippingNewline: true)!.trimmingCharacters(in: .whitespaces))
     switch op {
         case "+":
             print("Result: \(num1! + num2!)")
